@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.slide-number {
+				font-size: 3em !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>This is my slide deck</h1>
+				</section>
+				<section>
+					<section>
+						This is the superficial information
+					</section>
+					<section>
+						This is a further info slide
+					</section>
+					<section>
+						This is extra
+						<pre>
+							<code data-line-numbers="1,2|3|4|5" class="hljs javascript">
+								val x = 3;
+								for (i= 0; i&lt;n; i++){
+
+								}
+							</code>
+						</pre>
+					</section>
+				</section>
+				<section>
+					This is the 3rd slide
+					<aside class="notes">
+						Shhh, these are your private notes
+					</aside>
+				</section>
+				<section>
+					<p>This is my intro</p>
+					<p class="fragment fade-down" data-fragment-index="1">This is something <span class="fragment" data-fragment-index="2">after</span> else</p>
+					<ul>					
+						<li class="fragment" data-fragment-index="3">some</li>
+						<li class="fragment" data-fragment-index="3">things</li>
+						<li class="fragment" data-fragment-index="3">are</li>
+						<li class="fragment" data-fragment-index="4">cool</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
